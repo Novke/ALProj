@@ -1,6 +1,6 @@
 page 50103 "Reservation Journal"
 {
-    PageType = Worksheet;
+    PageType = List;
     SourceTable = "Reservation Jnl. Line";
     ApplicationArea = Basic, Suit;
     UsageCategory = Lists;
@@ -11,7 +11,7 @@ page 50103 "Reservation Journal"
     {
         area(Content)
         {
-            group(General)
+            repeater(General)
             {
                 field("Reservation No."; Rec."Reservation No.")
                 {
@@ -66,6 +66,7 @@ page 50103 "Reservation Journal"
                 {
                     ApplicationArea = All;
                     Caption = 'Total Fees';
+                    Editable = false;
                 }
 
                 field("Tee Time"; Rec."Tee Time")

@@ -12,7 +12,7 @@ page 50104 "Reservation Ledger Entries"
     {
         area(Content)
         {
-            group(General)
+            repeater(General)
             {
                 field("Reservation No."; Rec."Reservation No.")
                 {

@@ -36,12 +36,25 @@ table 50103 "Reservation Jnl. Line"
         {
             DataClassification = CustomerContent;
             Caption = 'Number of Players';
+
+            trigger OnValidate()
+                    var
+                        ReservationUtil: Codeunit "Reservation Util";
+                        ReservationType: Enum "Reservation Type";
+                    begin
+                        ReservationType := "Reservation Type";
+
+                        if "Actual Players" = 0
+                        then "Total Fees" := ReservationUtil.CalculateTotalFees("Number of Players", ReservationType, Course);
+                    end;
         }
 
         field(7; "Total Fees"; Decimal)
         {
             DataClassification = CustomerContent;
             Caption = 'Total Fees';
+
+            
         }
 
         field(8; "Tee Time"; Time)
@@ -54,6 +67,16 @@ table 50103 "Reservation Jnl. Line"
         {
             DataClassification = CustomerContent;
             Caption = 'Actual Players';
+
+            trigger OnValidate()
+                    var
+                        ReservationUtil: Codeunit "Reservation Util";
+                        ReservationType: Enum "Reservation Type";
+                    begin
+                        ReservationType := "Reservation Type";
+
+                        "Total Fees" := ReservationUtil.CalculateTotalFees("Actual Players", ReservationType, Course);
+                    end;
         }
     }
 

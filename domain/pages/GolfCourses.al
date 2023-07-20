@@ -10,7 +10,7 @@ page 50101 "Golf Courses"
     {
         area(Content)
         {
-            group(General)
+            repeater(General)
             {
                 field(ID;Rec.ID)
                 {
