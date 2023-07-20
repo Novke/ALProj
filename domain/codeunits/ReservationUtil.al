@@ -10,7 +10,7 @@ codeunit 50100 "Reservation Util"
         if Course <> '' then
         begin
             GolfCourse.Reset();
-            if GolfCourse.Get('ID', Course) then
+            if GolfCourse.Get(Course) then
                 GreenFees := GolfCourse."GreenFees";
         end;
 

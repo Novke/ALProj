@@ -18,62 +18,63 @@ page 50104 "Reservation Ledger Entries"
                 {
                     ApplicationArea = All;
                     Caption = 'Reservation No.';
-                    Editable = true;
+                    Editable = false;
                 }
 
                 field("Date of Play"; Rec."Date of Play")
                 {
                     ApplicationArea = All;
                     Caption = 'Date of Play';
-                    Editable = true;
+                    Editable = false;
                 }
 
                 field(Course; Rec.Course)
                 {
                     ApplicationArea = All;
                     Caption = 'Course';
-                    Editable = true;
+                    Editable = false;
                 }
 
                 field("Reservation Type"; Rec."Reservation Type")
                 {
                     ApplicationArea = All;
                     Caption = 'Reservation Type';
-                    Editable = true;
+                    Editable = false;
                 }
 
                 field("Member No."; Rec."Member No.")
                 {
                     ApplicationArea = All;
                     Caption = 'Member No.';
-                    Editable = true;
+                    Editable = false;
                 }
 
                 field("Number of Players"; Rec."Number of Players")
                 {
                     ApplicationArea = All;
                     Caption = 'Number of Players';
-                    Editable = true;
+                    Editable = false;
                 }
 
                 field("Total Fees"; Rec."Total Fees")
                 {
                     ApplicationArea = All;
                     Caption = 'Total Fees';
+                    Editable = false;
                 }
 
                 field("Tee Time"; rec."Tee Time")
                 {
                     ApplicationArea = All;
                     Caption = 'Tee Time';
-                    Editable = true;
+                    Editable = false;
                 }
 
                 field("Actual Players"; Rec."Actual Players")
                 {
                     ApplicationArea = All;
                     Caption = 'Actual Players';
-                    Editable = true;
+                    Editable = false;
                 }
             }
         }

@@ -18,6 +18,7 @@ table 50103 "Reservation Jnl. Line"
         {
             DataClassification = CustomerContent;
             Caption = 'Course';
+            TableRelation = "Golf Course";
         }
 
         field(4; "Reservation Type"; Enum "Reservation Type")
