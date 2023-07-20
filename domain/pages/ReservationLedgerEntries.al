@@ -1,7 +1,7 @@
 page 50104 "Reservation Ledger Entries"
 {
 
-    
+
 
     PageType = List;
     SourceTable = "Reservation Ledger Entry";
@@ -14,62 +14,62 @@ page 50104 "Reservation Ledger Entries"
         {
             group(General)
             {
-                field("Reservation No."; 1)
+                field("Reservation No."; Rec."Reservation No.")
                 {
                     ApplicationArea = All;
                     Caption = 'Reservation No.';
                     Editable = true;
                 }
 
-                field("Date of Play"; 2)
+                field("Date of Play"; Rec."Date of Play")
                 {
                     ApplicationArea = All;
                     Caption = 'Date of Play';
                     Editable = true;
                 }
 
-                field(Course; 3)
+                field(Course; Rec.Course)
                 {
                     ApplicationArea = All;
                     Caption = 'Course';
                     Editable = true;
                 }
 
-                field("Reservation Type"; 4)
+                field("Reservation Type"; Rec."Reservation Type")
                 {
                     ApplicationArea = All;
                     Caption = 'Reservation Type';
                     Editable = true;
                 }
 
-                field("Member No."; 5)
+                field("Member No."; Rec."Member No.")
                 {
                     ApplicationArea = All;
                     Caption = 'Member No.';
                     Editable = true;
                 }
 
-                field("Number of Players"; 6)
+                field("Number of Players"; Rec."Number of Players")
                 {
                     ApplicationArea = All;
                     Caption = 'Number of Players';
                     Editable = true;
                 }
 
-                field("Total Fees"; 7)
+                field("Total Fees"; Rec."Total Fees")
                 {
                     ApplicationArea = All;
                     Caption = 'Total Fees';
                 }
 
-                field("Tee Time"; 8)
+                field("Tee Time"; rec."Tee Time")
                 {
                     ApplicationArea = All;
                     Caption = 'Tee Time';
                     Editable = true;
                 }
 
-                field("Actual Players"; 9)
+                field("Actual Players"; Rec."Actual Players")
                 {
                     ApplicationArea = All;
                     Caption = 'Actual Players';
@@ -79,7 +79,7 @@ page 50104 "Reservation Ledger Entries"
         }
     }
 
-var
+    var
         FilterByCourseID: Integer;
 
     procedure SetCourseFilter(CourseID: Integer)
@@ -130,10 +130,10 @@ var
     //         end;
     //     end;
     // end;
-    
 
 
-   
+
+
 
 
 
@@ -141,7 +141,7 @@ var
 }
 
 
-    
+
 
 
 

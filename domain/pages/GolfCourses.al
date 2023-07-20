@@ -12,43 +12,43 @@ page 50101 "Golf Courses"
         {
             group(General)
             {
-                field(ID;1)
+                field(ID;Rec.ID)
                 {
                     ApplicationArea = All;
                     Caption = 'ID';
                 }
 
 
-                field(Name;2)
+                field(Name;Rec.Name)
                 {
                     ApplicationArea = All;
                     Caption = 'Name';
                 }
 
-                field(Address; 3)
+                field(Address; Rec.Address)
                 {
                     ApplicationArea = All;
                     Caption = 'Address';
                 }
 
-                field(GreenFees; 4)
+                field(GreenFees; Rec.GreenFees)
                 {
                     ApplicationArea = All;
                     Caption = 'Green Fees';
                 }
 
-                field(FilterDate; 5){
+                field(FilterDate; Rec.FilterDate){
                     ApplicationArea = All;
                     Caption = 'Filter Date';
                 }
 
-                field("No. of Reservations"; 6)
+                field("No. of Reservations"; Rec.NoOfReservations)
                 {
                     ApplicationArea = All;
                     Caption = 'No. of Reservations';
                 }
 
-                field("Total Amount"; 7)
+                field("Total Amount"; Rec.TotalAmount)
                 {
                     ApplicationArea = All;
                     Caption = 'Total Amount';

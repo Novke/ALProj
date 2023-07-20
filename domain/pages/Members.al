@@ -11,60 +11,60 @@ page 50102 "Club Members"
         {
             repeater(Control1)
             {
-                field(ID; 1)
+                field(ID; Rec.ID)
                 {
                     ApplicationArea = All;
                     Caption = 'ID';
                     Editable = true;
                 }
 
-                field(Name; 2)
+                field(Name; Rec.Name)
                 {
                     ApplicationArea = All;
                     Caption = 'Name';
                     Editable = true;
                 }
 
-                field(Address; 3)
+                field(Address; Rec.Address)
                 {
                     ApplicationArea = All;
                     Caption = 'Address';
                     Editable = true;
                 }
 
-                field(ClubMemberType; 4)
+                field(ClubMemberType; Rec.ClubMemberType)
                 {
                     ApplicationArea = All;
                     Caption = 'Club Member Type';
                     Editable = true;
                 }
 
-                field(MemberStatus; 5)
+                field(MemberStatus; Rec.MemberStatus)
                 {
                     ApplicationArea = All;
                     Caption = 'Member Status';
                     Editable = true;
                 }
 
-                field(FilterDate; 6)
+                field(FilterDate; Rec.FilterDate)
                 {
                     ApplicationArea = All;
                     Caption = 'Filter Date';
                     Editable = true;
                 }
 
-                field("No. of Reservations"; 7)
+                field("No. of Reservations"; Rec.NoOfReservations)
                 {
                     ApplicationArea = All;
                     Caption = 'No. of Reservations';
-                    Editable = true;
+                    Editable = false;
                 }
 
-                field("Total Amount"; 8)
+                field("Total Amount"; Rec.TotalAmount)
                 {
                     ApplicationArea = All;
                     Caption = 'Total Amount';
-                    Editable = true;
+                    Editable = false;
                 }
             }
         }
